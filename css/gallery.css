@@ -1,0 +1,103 @@
+body {
+    background: url('../img/bg.png') top left repeat;
+    background-color: #A8AE98;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 12px 0 30px;
+    font-family: 'Courgette', cursive;
+    font-size: 5em;
+    font-weight: normal;
+    text-align: center;
+    color: #19763E;
+    text-shadow: 1px 1px 3px #22A054;
+}
+
+h2, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 900;
+    color: #22A054;
+}
+
+p {
+    color: #FCFCFC;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    
+    -webkit-column-gap: 80px;
+    -moz-column-gap: 80px;
+    column-gap: 80px;
+    
+    -webkit-column-rule: 1px solid #22A054;
+    -moz-column-rule: 1px solid #22A054;
+    column-rule: 1px solid #22A054;
+}
+
+#stage {
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ECEDE9;   
+    box-shadow: inset 0px 0px 10px 2px #717661;
+    list-style: none;
+    -webkit-user-select: none;
+}
+
+.image {
+    width: 208px;
+    height: 159px;
+    margin: 12px;
+    float: left;
+}
+
+.image > img {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.photo {
+    width: 190px;
+    height: 140px;
+    background: #FFF;
+    border: 10px solid #FFF;
+}
+
+.photo:hover {
+    box-shadow: 0px 0px 10px rgba(83, 191, 107, .7);
+    cursor: pointer;
+}
+
+.photo_fullsize {
+    width: 500px;
+    height: 333px;
+    z-index: 1000;
+    border: 15px solid #FFF;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(83, 191, 107, .8);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+
+/* Nicolas Gallagher's Clearfix Hack */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
